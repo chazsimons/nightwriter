@@ -8,11 +8,12 @@ class NightWriter
   end
 
   def read(in_file)
-    File.read(in_file)
+    string = File.read(in_file)
+    string
   end
 
   def translate(in_file, out_file)
-    interpretor = Translator.new(in_file, out_file)
+    interpretor = Translator.new(in_file.read, out_file)
     # interpretor.translate
   end
 
