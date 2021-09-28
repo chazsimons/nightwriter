@@ -1,0 +1,19 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/chazsimons/turing/mod1/nightwriter/lib/night_writer.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1632790403
+  }
+}
