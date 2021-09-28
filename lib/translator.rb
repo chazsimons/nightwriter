@@ -38,4 +38,14 @@ class Translator
     full_message = [@top_line.join, @middle_line.join, @bottom_line.join]
     full_message
   end
+
+  def to_english(message)
+    require "pry"; binding.pry
+    segments = message.each_slice(message.length / 3).to_a.transpose
+    translation = []
+    segments.each do |segment|
+      translation << braille_to_english[segment]
+    end
+    translation.join
+  end
 end

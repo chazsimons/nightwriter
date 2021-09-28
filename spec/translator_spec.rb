@@ -32,4 +32,9 @@ describe Translator do
         '00000.0...0.0.......0.00000..000',
         '0.....0.....0.......0.0.0...0...'])
   end
+
+  xit 'can translate a message from braille' do
+    results = @translator.to_english('.00..0.0...0.0..0....0.00..0000000000.0...0.0.......0.00000..0000.....0.....0.......0.0.0...0...')
+    expect(results).to eq('this is a string')
+  end
 end
