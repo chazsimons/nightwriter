@@ -1,20 +1,18 @@
-class NightWriter
+class NightReader
 
-  attr_reader :in_file,
-              :out_file
   def initialize
-    @in_file = ARGV[0]
+    @in_file  = ARGV[0]
     @out_file = ARGV[1]
   end
 
   def read(in_file)
-    string = File.read(in_file)
-    string
+    message = File.read(in_file)
+    message
   end
 
   def translate(in_file, out_file)
-    interpretor = Translator.new(in_file.read, out_file)
-    # interpretor.to_braille
+    interpretor = Translator.new(in_file, out_file)
+    # interpretor.to_english
   end
 
   def creation_message(in_file, out_file)
