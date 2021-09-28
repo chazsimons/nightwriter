@@ -23,4 +23,13 @@ describe Translator do
     expect(results.count).to eq(16)
     expect(results).to be_an(Array)
   end
+
+  it 'can translate a message to braille' do
+    array = @translator.breakdown('this is a string')
+    results = @translator.to_braille(array)
+    expect(results).to eq(
+      ['.00..0.0...0.0..0....0.00..00000',
+        '00000.0...0.0.......0.00000..000',
+        '0.....0.....0.......0.0.0...0...'])
+  end
 end
