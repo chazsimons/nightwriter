@@ -15,4 +15,9 @@ class NightWriter
     interpretor = Translator.new(in_file, out_file)
     # interpretor.translate
   end
+
+  def creation_message(in_file, out_file)
+    read(in_file)
+    "Created '#{out_file}' containing #{in_file.length} characters"
+  end
 end

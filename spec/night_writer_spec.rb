@@ -22,4 +22,8 @@ describe NightWriter do
     results = @writer.translate('message.txt', 'braille.txt')
     expect(results).to be_an_instance_of(Translator)
   end
+
+  it 'can display a message' do
+    expect(@writer.creation_message('message.txt', 'braille.txt')).to eq("Created 'braille.txt' containing 11 characters")
+  end
 end
