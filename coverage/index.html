@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-09-27T18:14:51-07:00">2021-09-27T18:14:51-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-09-27T18:21:06-07:00">2021-09-27T18:21:06-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="red">
-  66.67%
+  78.95%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
-       <span class="red">
-         0.67
+       <span class="yellow">
+         1.0
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>18</b> relevant lines,
-    <span class="green"><b>12</b> lines covered</span> and
-    <span class="red"><b>6</b> lines missed. </span>
+    <b>19</b> relevant lines,
+    <span class="green"><b>15</b> lines covered</span> and
+    <span class="red"><b>4</b> lines missed. </span>
     (<span class="red">
-  66.67%
+  78.95%
 </span>
 )
   </div>
@@ -83,12 +83,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#70be5857950a361e09754b4af13f2899c6b21ac4" class="src_link" title="lib/translator.rb">lib/translator.rb</a></td>
-            <td class="red strong cell--number t-file__coverage">77.78 %</td>
-            <td class="cell--number">14</td>
-            <td class="cell--number">9</td>
-            <td class="cell--number">7</td>
-            <td class="cell--number">2</td>
-            <td class="cell--number">0.78</td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">15</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.40</td>
             
           </tr>
         
@@ -1563,8 +1563,8 @@
   <div class="header">
     <h3>lib/translator.rb</h3>
     <h4>
-      <span class="red">
-  77.78%
+      <span class="green">
+  100.0%
 </span>
 
       lines covered
@@ -1573,9 +1573,9 @@
     
 
     <div class="t-line-summary">
-      <b>9</b> relevant lines.
-      <span class="green"><b>7</b> lines covered</span> and
-      <span class="red"><b>2</b> lines missed.</span>
+      <b>10</b> relevant lines.
+      <span class="green"><b>10</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
 
     
@@ -1619,24 +1619,24 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="4">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="5">
+          <li class="covered" data-hits="1" data-linenumber="4">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  def initialize(in_file, out_file)</code>
+            <code class="ruby">  attr_reader :message,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby">              :path</code>
           </li>
         </div>
       
@@ -1647,29 +1647,29 @@
 
             
 
+            <code class="ruby">  def initialize(in_file, out_file)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="7">
+            <span class="hits">3</span>
+            
+
+            
+
             <code class="ruby">    @message = in_file</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="7">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="3" data-linenumber="8">
+            <span class="hits">3</span>
             
 
             
 
             <code class="ruby">    @path    = out_file</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="8">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -1680,12 +1680,23 @@
 
             
 
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
+            
+            
+
+            
+
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="10">
+          <li class="covered" data-hits="1" data-linenumber="11">
             <span class="hits">1</span>
             
 
@@ -1696,19 +1707,19 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="11">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="12">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    characters = message.chomp.split(//)</code>
+            
+
+            <code class="ruby">    characters = message.split(//)</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="12">
-            
+          <li class="covered" data-hits="1" data-linenumber="13">
+            <span class="hits">1</span>
             
 
             
@@ -1718,7 +1729,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="13">
+          <li class="never" data-hits="" data-linenumber="14">
             
             
 
@@ -1729,7 +1740,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="14">
+          <li class="never" data-hits="" data-linenumber="15">
             
             
 
